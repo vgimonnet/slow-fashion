@@ -1,0 +1,49 @@
+{
+  "users": [],
+  "blogs": [
+    {
+      "contenu": "azertyuiop",
+      "image": "https://happygentleman.com/wp-content/uploads/2020/06/ws21-charcoal-4.jpg",
+      "titre": "test",
+      "id": 4
+    }
+  ],
+  "ambassadeurs": [],
+  "equipes": [
+    {
+      "nom": "test",
+      "id": 1
+    }
+  ],
+  "partenaire": {
+    "titre": "titre",
+    "contenu": "contenu"
+  },
+  "accueil": {
+    "contenu": "Notre contenu d'accueil",
+    "titre": "Notre slogan",
+    "image": ""
+  },
+  "donation": {
+    "titre": "Notre slogan",
+    "contenu": "Notre contenu d'accueil",
+    "image": ""
+  },
+  "valeurs": [
+    {
+      "titre": "Locale",
+      "description": "La promotion des commerces et artisans locaux est l'une des valeurs centrales.\nCela permet de réduire les coûts de transport et d'améliorer les services locaux.",
+      "id": 2
+    },
+    {
+      "titre": "Durabilité",
+      "description": "Les vêtements durables aident les gens et la planète. \nLa slow fashion s'engage à donner la priorité à la réparation, à la location et à la vente des vêtements. Ce n'est que de cette manière que nous pouvons éviter les déchets inutiles.",
+      "id": 3
+    },
+    {
+      "titre": "Recyclabilité",
+      "description": "Slow fashion s’engage à promouvoir les vêtements éco-responsables. \nÇa veut dire respecter la biodiversité, les travailleurs et privilégier des vêtements écologiques.\nL’objectif est d’arriver à une mode plus juste.",
+      "id": 4
+    }
+  ]
+}
