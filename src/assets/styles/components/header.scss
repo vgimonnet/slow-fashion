@@ -6,6 +6,7 @@ header {
   position: sticky;
   top: 0;
   background: $black;
+  z-index: 9999;
   nav {
     margin-left: auto;
     ul {
