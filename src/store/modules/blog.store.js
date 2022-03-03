@@ -39,7 +39,7 @@ export default {
   actions: {
     async getBlogs ({ commit }) {
       try {
-        const blogs = await axios.get('http://localhost:8888/blogs');
+        const blogs = await axios.get('https://slow-fashion.api.vgimonnet.fr/blogs');
         await commit('BLOGS', blogs.data);
       } catch {
         await commit('BLOGMSGERROR', 'Une erreur interne est survenue');
@@ -47,7 +47,7 @@ export default {
     },
     async getBlog ({ commit }, id) {
       try {
-        const blog = await axios.get(`http://localhost:8888/blogs/${ id }`);      
+        const blog = await axios.get(`https://slow-fashion.api.vgimonnet.fr/blogs/${ id }`);      
         await commit('BLOG', blog.data);
       } catch {
         await commit('BLOGMSGERROR', 'Une erreur interne est survenue');
@@ -55,7 +55,7 @@ export default {
     },
     async createBlog({ commit }, payload) {
       try {
-        const blog = await axios.post('http://localhost:8888/blogs', payload);
+        const blog = await axios.post('https://slow-fashion.api.vgimonnet.fr/blogs', payload);
         await commit('BLOG', blog.data);
         await commit('BLOGMSGSUCCESS', 'Blog ajouté avec succés !');
       } catch {
@@ -64,7 +64,7 @@ export default {
     },
     async updateBlog({ commit }, payload) {
       try {
-        const blog = await axios.put(`http://localhost:8888/blogs/${ payload.id }`, payload.data);
+        const blog = await axios.put(`https://slow-fashion.api.vgimonnet.fr/blogs/${ payload.id }`, payload.data);
         await commit('BLOG', blog.data);
         await commit('BLOGMSGSUCCESS', 'Blog modifié avec succés !');
       } catch {
@@ -73,7 +73,7 @@ export default {
     },
     async deleteBlog({ commit }, id) {
       try {
-        await axios.delete(`http://localhost:8888/blogs/${ id }`);
+        await axios.delete(`https://slow-fashion.api.vgimonnet.fr/blogs/${ id }`);
         await commit('BLOGMSGSUCCESS', 'Blog supprimé avec succès !');
       } catch {
         await commit('BLOGMSGERROR', 'Une erreur interne est survenue');

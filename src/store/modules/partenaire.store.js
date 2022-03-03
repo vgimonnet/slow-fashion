@@ -25,7 +25,7 @@ export default {
   actions: {
     async getPartenaire ({ commit }) {
       try {
-        const partenaires = await axios.get('http://localhost:8888/partenaire');
+        const partenaires = await axios.get('https://slow-fashion.api.vgimonnet.fr/partenaire');
         await commit('PARTENAIRE', partenaires.data);
       } catch {
         await commit('PARTENAIREMSGERROR', 'Une erreur interne est survenue');
@@ -33,7 +33,7 @@ export default {
     },
     async updatePartenaire({ commit }, payload) {
       try {
-        const partenaire = await axios.put(`http://localhost:8888/partenaire`, payload.data);
+        const partenaire = await axios.put(`https://slow-fashion.api.vgimonnet.fr/partenaire`, payload.data);
         await commit('PARTENAIRE', partenaire.data);
         await commit('PARTENAIREMSGSUCCESS', 'Texte de la section d\'partenaire modifié avec succés !');
       } catch {
