@@ -39,7 +39,7 @@ export default {
   actions: {
     async getAmbassadeurs ({ commit }) {
       try {
-        const ambassadeurs = await axios.get('http://localhost:8000/ambassadeurs');
+        const ambassadeurs = await axios.get('http://localhost:8888/ambassadeurs');
         await commit('AMBASSADEURS', ambassadeurs.data);
       } catch {
         await commit('AMBASSADEURMSGERROR', 'Une erreur interne est survenue');
@@ -47,7 +47,7 @@ export default {
     },
     async getAmbassadeur ({ commit }, id) {
       try {
-        const ambassadeur = await axios.get(`http://localhost:8000/ambassadeurs/${ id }`);      
+        const ambassadeur = await axios.get(`http://localhost:8888/ambassadeurs/${ id }`);      
         await commit('AMBASSADEUR', ambassadeur.data);
       } catch {
         await commit('AMBASSADEURMSGERROR', 'Une erreur interne est survenue');
@@ -55,7 +55,7 @@ export default {
     },
     async createAmbassadeur({ commit }, payload) {
       try {
-        const ambassadeur = await axios.post('http://localhost:8000/ambassadeurs', payload);
+        const ambassadeur = await axios.post('http://localhost:8888/ambassadeurs', payload);
         await commit('AMBASSADEUR', ambassadeur.data);
         await commit('AMBASSADEURMSGSUCCESS', 'Ambassadeur ajouté avec succés !');
       } catch {
@@ -64,7 +64,7 @@ export default {
     },
     async updateAmbassadeur({ commit }, payload) {
       try {
-        const ambassadeur = await axios.put(`http://localhost:8000/ambassadeurs/${ payload.id }`, payload.data);
+        const ambassadeur = await axios.put(`http://localhost:8888/ambassadeurs/${ payload.id }`, payload.data);
         await commit('AMBASSADEUR', ambassadeur.data);
         await commit('AMBASSADEURMSGSUCCESS', 'Ambassadeur modifié avec succés !');
       } catch {
@@ -73,7 +73,7 @@ export default {
     },
     async deleteAmbassadeur({ commit }, id) {
       try {
-        await axios.delete(`http://localhost:8000/ambassadeurs/${ id }`);
+        await axios.delete(`http://localhost:8888/ambassadeurs/${ id }`);
         await commit('AMBASSADEURMSGSUCCESS', 'Ambassadeur supprimé avec succès !');
       } catch {
         await commit('AMBASSADEURMSGERROR', 'Une erreur interne est survenue');

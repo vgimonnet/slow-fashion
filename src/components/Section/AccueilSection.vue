@@ -1,20 +1,29 @@
 <template>
-  <section id="accueil">
-    <h1>{{ accueil.titre }}</h1>
-    <p>{{ accueil.contenu }}</p>
-    <img src="" alt="">
+  <section id="accueil" v-if="accueil">
+    <img src="../../assets/images/home.svg" alt="Modèle">
+    <h1 v-html="accueil.titre"></h1>
+    <div v-html="accueil.contenu"></div>
   </section>
 </template>
 
 <script>
-  import json from '../../../server/db.json';
-
   export default {
     name: 'AccueilSection',
-    data: () => {
+    data () {
       return {
-        accueil: json.accueil
+        accueil: null
       }
-    }
+    },
+    created() {
+      this.unsubscribe = this.$store.subscribe(({ type, payload }) => {
+        if (type === 'ACCUEIL') this.accueil = payload;
+      });
+    },
+    mounted() { this.$store.dispatch('getAccueil'); },
+    destroyed() { this.unsubscribe(); },
   }
 </script>
+
+<style lang="scss">
+  @import '../../assets/styles/components/sections/accueil.section.scss';
+</style>

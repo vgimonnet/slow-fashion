@@ -21,13 +21,13 @@
     },
     created() {
       this.unsubscribe = this.$store.subscribe(({ type, payload }) => {
-        if (type === 'AMBASSADEUR') {
+        if (type === 'VALEUR') {
           this.titre = payload.titre;
           this.description = payload.description;
-        } else if (type === 'AMBASSADEURMSGSUCCESS') {
-          this.$router.push('/admin/ambassadeurs');
+        } else if (type === 'VALEURMSGSUCCESS') {
+          this.$router.push('/admin/valeurs');
           window.alert(payload);
-        } else if (type === 'AMBASSADEURMSGERROR') {
+        } else if (type === 'VALEURMSGERROR') {
           window.alert(payload);
         }
       });

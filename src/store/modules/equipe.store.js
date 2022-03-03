@@ -39,7 +39,7 @@ export default {
   actions: {
     async getEquipes ({ commit }) {
       try {
-        const equipes = await axios.get('http://localhost:8000/equipes');
+        const equipes = await axios.get('http://localhost:8888/equipes');
         await commit('EQUIPES', equipes.data);
       } catch {
         await commit('EQUIPEMSGERROR', 'Une erreur interne est survenue');
@@ -47,7 +47,7 @@ export default {
     },
     async getEquipe ({ commit }, id) {
       try {
-        const equipe = await axios.get(`http://localhost:8000/equipes/${ id }`);      
+        const equipe = await axios.get(`http://localhost:8888/equipes/${ id }`);      
         await commit('EQUIPE', equipe.data);
       } catch {
         await commit('EQUIPEMSGERROR', 'Une erreur interne est survenue');
@@ -55,7 +55,7 @@ export default {
     },
     async createEquipe({ commit }, payload) {
       try {
-        const equipe = await axios.post('http://localhost:8000/equipes', payload);
+        const equipe = await axios.post('http://localhost:8888/equipes', payload);
         await commit('EQUIPE', equipe.data);
         await commit('EQUIPEMSGSUCCESS', 'Membre ajouté avec succés !');
       } catch {
@@ -64,7 +64,7 @@ export default {
     },
     async updateEquipe({ commit }, payload) {
       try {
-        const equipe = await axios.put(`http://localhost:8000/equipes/${ payload.id }`, payload.data);
+        const equipe = await axios.put(`http://localhost:8888/equipes/${ payload.id }`, payload.data);
         await commit('EQUIPE', equipe.data);
         await commit('EQUIPEMSGSUCCESS', 'Membre modifié avec succés !');
       } catch {
@@ -73,7 +73,7 @@ export default {
     },
     async deleteEquipe({ commit }, id) {
       try {
-        await axios.delete(`http://localhost:8000/equipes/${ id }`);
+        await axios.delete(`http://localhost:8888/equipes/${ id }`);
         await commit('EQUIPEMSGSUCCESS', 'Membre supprimé avec succès !');
       } catch {
         await commit('EQUIPEMSGERROR', 'Une erreur interne est survenue');

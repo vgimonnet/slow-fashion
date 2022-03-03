@@ -20,9 +20,9 @@
     "contenu": "contenu"
   },
   "accueil": {
-    "contenu": "Notre contenu d'accueil",
-    "titre": "Notre slogan",
-    "image": ""
+    "contenu": "<p>\nLe terme Slow fashion est née par opposition à la \"fast fashion\" entrainant depuis une trentaine d'années une hyper-consommation du vêtement. Le concept de slow fashion revisite notre manière de consommer la mode au profit de vêtements de meilleure qualité, éco-conçus et durables. Nous unissons les gens à l'échelle mondiale et locale pour prendre des mesures collectives. En montrant l'exemple, nous exigeons des changements de la part de l'industrie de la mode et des décideurs politiques.\n</p>",
+    "image": "",
+    "titre": "<p>Une <i>communauté</i> pour faire <i class=\"color-blue\">bouger</i> les choses dans <i>l’industrie de la mode</i></p>"
   },
   "donation": {
     "titre": "Notre slogan",
@@ -31,18 +31,27 @@
   },
   "valeurs": [
     {
+      "titre": "Éco-responsable",
+      "description": "Slow fashion s’engage à promouvoir les vêtements éco-responsables. Ça veut dire respecter la biodiversité, les travailleurs et privilégier des vêtements écologiques. L’objectif est d’arriver à une mode plus juste.",
+      "image": "img-ecoresponsable",
+      "id": 1
+    },
+    {
       "titre": "Locale",
       "description": "La promotion des commerces et artisans locaux est l'une des valeurs centrales.\nCela permet de réduire les coûts de transport et d'améliorer les services locaux.",
+      "image": "img-locale",
       "id": 2
     },
     {
       "titre": "Durabilité",
       "description": "Les vêtements durables aident les gens et la planète. \nLa slow fashion s'engage à donner la priorité à la réparation, à la location et à la vente des vêtements. Ce n'est que de cette manière que nous pouvons éviter les déchets inutiles.",
+      "image": "img-durabilite",
       "id": 3
     },
     {
       "titre": "Recyclabilité",
       "description": "Slow fashion s’engage à promouvoir les vêtements éco-responsables. \nÇa veut dire respecter la biodiversité, les travailleurs et privilégier des vêtements écologiques.\nL’objectif est d’arriver à une mode plus juste.",
+      "image": "img-recyclabilite",
       "id": 4
     }
   ]

@@ -25,7 +25,7 @@ export default {
   actions: {
     async getDonation ({ commit }) {
       try {
-        const donations = await axios.get('http://localhost:8000/donation');
+        const donations = await axios.get('http://localhost:8888/donation');
         await commit('DONATION', donations.data);
       } catch {
         await commit('DONATIONMSGERROR', 'Une erreur interne est survenue');
@@ -33,7 +33,7 @@ export default {
     },
     async updateDonation({ commit }, payload) {
       try {
-        const donation = await axios.put(`http://localhost:8000/donation`, payload.data);
+        const donation = await axios.put(`http://localhost:8888/donation`, payload.data);
         await commit('DONATION', donation.data);
         await commit('DONATIONMSGSUCCESS', 'Texte de la section donation modifié avec succés !');
       } catch {

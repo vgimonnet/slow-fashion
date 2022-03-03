@@ -1,0 +1,50 @@
+@import '../../charte.scss';
+
+section#valeur {
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  ul {
+    grid-column: 1;
+    li {
+      margin-bottom: 50px;
+      &:last-child { margin-bottom: 0;}
+    }
+    h2.valeur_titre {
+      color: $dark;
+      font-size: 80px;
+      cursor: pointer;
+      margin-bottom: 50px;
+      transition: .5s;
+      img {
+        display: none;
+      }
+  
+      &.active {
+        color: $white;
+        img {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  p {
+    grid-column: 2;
+    color: grey;
+    height: fit-content ;
+    margin: auto 0 auto auto;
+    width: 70%;
+    img {
+      visibility: hidden;
+      position: absolute;
+      margin-top: -50px;
+      margin-left: -80px;
+      &.active {
+        visibility: visible;
+      }
+    }
+  }
+}

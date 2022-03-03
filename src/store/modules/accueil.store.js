@@ -25,15 +25,15 @@ export default {
   actions: {
     async getAccueil ({ commit }) {
       try {
-        const accueils = await axios.get('http://localhost:8000/accueil');
-        await commit('ACCUEIL', accueils.data);
+        const accueil = await axios.get('http://localhost:8888/accueil');
+        await commit('ACCUEIL', accueil.data);
       } catch {
         await commit('ACCUEILMSGERROR', 'Une erreur interne est survenue');
       }
     },
     async updateAccueil({ commit }, payload) {
       try {
-        const accueil = await axios.put(`http://localhost:8000/accueil`, payload.data);
+        const accueil = await axios.put(`http://localhost:8888/accueil`, payload.data);
         await commit('ACCUEIL', accueil.data);
         await commit('ACCUEILMSGSUCCESS', 'Texte de la section d\'accueil modifié avec succés !');
       } catch {

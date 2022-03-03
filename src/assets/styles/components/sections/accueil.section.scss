@@ -1,0 +1,36 @@
+@import '../../charte.scss';
+
+$half: calc(50vw - 20px);
+
+section#accueil {
+  display: grid;
+  grid-template-columns: $half $half;
+  column-gap: 20px;
+  img {
+    max-width: $half;
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+  h1, div {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    height: fit-content;
+  }
+  h1 {
+    margin-top: 20px;
+    max-width: 55%;
+    p {
+      font-size: 30px;
+      color: $white;
+      text-align: inherit;
+    }
+  }
+  div {
+    margin-top: auto;
+    color: $grey;
+    padding: 0 20px 20px 0;
+    p {
+      text-align: justify;
+    }
+  }
+}

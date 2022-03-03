@@ -1,0 +1,34 @@
+@import '../../charte.scss';
+
+section#ambassadeur {
+  display: flex;
+  div#carousel {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    &::-webkit-scrollbar { width: 0 !important }
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+
+    img {
+      margin: 0 10px;
+    }
+  }
+
+  div#ambassadeur-content {
+    width: 45%;
+    margin-left: 140px;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+
+
+
+  }
+}
