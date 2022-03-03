@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "db": "npx json-server server/db.json -p 8888"
+    "db": "npx json-server server/db.json -p 8888",
+    "prod": "echo \"\n\" | nohup json-server server/db.json -p 8888 > logs.log &"
   },
   "dependencies": {
     "axios": "^0.26.0",
