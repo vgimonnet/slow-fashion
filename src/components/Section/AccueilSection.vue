@@ -1,8 +1,10 @@
 <template>
   <section id="accueil" v-if="accueil">
     <img src="../../assets/images/home.svg" alt="Modèle">
-    <h1 v-html="accueil.titre"></h1>
-    <div v-html="accueil.contenu"></div>
+    <div id="accueil-container">
+      <h1 v-html="accueil.titre"></h1>
+      <div v-html="accueil.contenu"></div>
+    </div>
   </section>
 </template>
 

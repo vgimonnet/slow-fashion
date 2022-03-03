@@ -30,19 +30,19 @@
       </ul> -->
       <ul>
         <li>
-          <a href="#accueil" class="anchor">À propos</a>
+          <a href="#accueil" class="anchor" @click="scroll('#accueil')">À propos</a>
         </li>
         <li>
-          <a href="#ambassadeur" class="anchor">Devenir ambassadeur/rice</a>
+          <a href="#ambassadeur" class="anchor" @click="scroll('#accueil')">Devenir ambassadeur/rice</a>
         </li>
         <li>
-          <a href="#donation" class="anchor">Donations</a>
+          <a href="#donation" class="anchor" @click="scroll('#accueil')">Donations</a>
         </li>
         <li>
-          <router-link :to="{ name: 'Blogs' }">Blogs</router-link>          
+          <a href="#">Blogs</a>
         </li>
         <li>
-          <router-link :to="{ name: 'Admin' }">Contact</router-link>          
+          <a href="#">Contact</a>
         </li>
       </ul>
     </nav>
@@ -51,6 +51,11 @@
 
 <script>
   export default {
-    name: 'HeaderApp'
+    name: 'HeaderApp',
+    methods: {
+      scroll(id) {
+        
+      }
+    }
   }
 </script>

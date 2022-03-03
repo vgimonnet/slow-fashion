@@ -1,4 +1,9 @@
 <template>
+  <div id="loader">
+    <span class="loader">
+      <span class="loader-inner"></span>
+    </span>
+  </div>
   <header-app></header-app>
   <router-view></router-view>
   <footer-app></footer-app>
@@ -23,6 +28,12 @@
         button.addEventListener('mouseover', () => marquee.start());
         button.addEventListener('mouseout', () => marquee.stop());
       }
+
+      setTimeout(() => {
+        document.querySelector("div#loader").classList.add('d-none');
+        document.getElementsByTagName('html')[0].style.overflow = 'auto';
+
+      }, 2000);
     }
   }
 </script>

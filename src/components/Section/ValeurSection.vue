@@ -8,7 +8,7 @@
         </h2>
       </li>
     </ul>
-    <p>
+    <p class="color-grey">
       <img src="../../assets/images/eco-responsable.svg" alt="Eco-responsable" id="img-ecoresponsable">
       <img src="../../assets/images/locale.svg" alt="Locale" id="img-locale">
       <img src="../../assets/images/recyclabilite.svg" alt="Recyclabilité" id="img-recyclabilite">

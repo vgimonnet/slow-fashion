@@ -8,14 +8,16 @@
         <i>nous aider</i> !
       </h2>
 
-      <p class="texte">
-        Mais comment ? Vous pouvez contribuer à l’évolution du mouvement en faisant un don ou en nous soutenant sur les réseaux tel qu’Instagram.
-      </p>
-      <button class="marquee" id="marquee-donation">
-        <marquee behavior="sliding" direction="left">
-          Faire une donation - Faire une donation - Faire une donation
-        </marquee>
-      </button>
+      <div>
+        <p class="texte color-grey">
+          Mais comment ? Vous pouvez contribuer à l’évolution du mouvement en faisant un don ou en nous soutenant sur les réseaux tel qu’Instagram.
+        </p>
+        <button class="marquee" id="marquee-donation">
+          <marquee behavior="sliding" direction="left">
+            Faire une donation - Faire une donation - Faire une donation - Faire une donation - Faire une donation - Faire une donation - Faire une donation - Faire une donation - Faire une donation - Faire une donation - Faire une donation - Faire une donation
+          </marquee>
+        </button>
+      </div>
     </div>
   </section>
 </template>

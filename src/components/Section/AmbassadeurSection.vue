@@ -1,12 +1,14 @@
 <template>
   <section id="ambassadeur">
-    <div id="carousel">
-      <img src="../../assets/images/woman1.svg" alt="Ambassadrice 1">
-      <img src="../../assets/images/woman2.svg" alt="Ambassadrice 2">
-      <img src="../../assets/images/woman3.svg" alt="Ambassadrice 3">
-      <img src="../../assets/images/woman1.svg" alt="Ambassadrice 1">
-      <img src="../../assets/images/woman2.svg" alt="Ambassadrice 2">
-      <img src="../../assets/images/woman3.svg" alt="Ambassadrice 3">
+    <div id="carousel" direction="right">
+      <!-- <marquee behavior="scroll" > -->
+        <img src="../../assets/images/woman1.svg" alt="Ambassadrice 1">
+        <img src="../../assets/images/woman2.svg" alt="Ambassadrice 2">
+        <img src="../../assets/images/woman3.svg" alt="Ambassadrice 3">
+        <img src="../../assets/images/woman1.svg" alt="Ambassadrice 1">
+        <img src="../../assets/images/woman2.svg" alt="Ambassadrice 2">
+        <img src="../../assets/images/woman3.svg" alt="Ambassadrice 3">
+      <!-- </marquee> -->
     </div>
     <div id="ambassadeur-content">
       <h2>

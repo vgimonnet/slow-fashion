@@ -33,7 +33,7 @@ section#valeur {
 
   p {
     grid-column: 2;
-    color: grey;
+    color: $grey;
     height: fit-content ;
     margin: auto 0 auto auto;
     width: 70%;
@@ -41,10 +41,22 @@ section#valeur {
       visibility: hidden;
       position: absolute;
       margin-top: -50px;
-      margin-left: -80px;
+      margin-left: -80px;      
       &.active {
+        -webkit-animation: infiniteRotate 12s linear infinite;
+        animation: infiniteRotate 12s linear infinite;
         visibility: visible;
       }
     }
   }
+}
+
+@-webkit-keyframes infiniteRotate {    
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+/* Standard syntax */
+@keyframes infinite-rotate {  
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
