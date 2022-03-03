@@ -1,7 +1,16 @@
 <template>
-  <main v-if="blog">
-    <h1>{{ blog.titre }}</h1>
-    <p>{{ blog.contenu }}</p>
+  <main v-if="blog" id="admin">
+    <section id="blog-page">
+      <h1>
+        <span>
+          {{ blog.titre }}
+        </span>
+      </h1>
+      <article>
+        <img src="/src/assets/images/woman1.svg" alt="Ambassadrice 1">
+        <p>{{ blog.contenu }}</p>
+      </article>
+    </section>
   </main>
 </template>
 

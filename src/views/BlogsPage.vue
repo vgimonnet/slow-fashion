@@ -1,11 +1,17 @@
 <template>
-  <main>
+  <main id="admin">
     <h1>
-      Blogs
+      <span>
+        Blogs
+      </span>
     </h1>
-    <ul>
-      <li v-for="blog in blogs" :key="blog.id">
-        {{ blog.titre }}
+    <ul id="blogs_list">
+      <li v-for="(blog, index) in blogs" :key="blog.id">
+        <router-link :to="{ name: 'Blog', params: { id: blog.id } }">
+          <img src="/src/assets/images/woman1.svg" alt="Ambassadrice 1" v-if="index % 2 === 0">
+          <img src="/src/assets/images/woman2.svg" alt="Ambassadrice 2" v-else>
+          <span>{{ blog.titre }}</span>
+        </router-link>
       </li>
     </ul>
   </main>
