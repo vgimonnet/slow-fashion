@@ -11,6 +11,8 @@ section#donation {
     padding-top: 100px;
     padding-bottom: 100px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 
     h2 {
       font-size: 80px;
@@ -25,6 +27,10 @@ section#donation {
       width: 300px;
       margin-top: 20px;
       margin-bottom: 30px;
+    }
+
+    button.marquee {
+      margin: auto;
     }
   }
 }

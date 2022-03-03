@@ -19,39 +19,44 @@
 </template>
 
 <script>
-  import json from '../../../server/db.json';
-
   export default {
     name: 'ValeurSection',
     data: () => {
       return {
-        valeurs: json.valeurs,
+        valeurs: [],
         texte: ''
       }
     },
-    mounted() {
-      const items = document.querySelectorAll('h2.valeur_titre');
+    created() {
+      this.unsubscribe = this.$store.subscribe(({ type, payload }) => {
+        if (type === 'VALEURS') {
+          this.valeurs = payload;
+          setTimeout(() => this.startListeners(), 1000);
+        }
+      });
+    },
+    mounted() { this.$store.dispatch('getValeurs'); },
+    destroyed() { this.unsubscribe(); },
+    methods: {
+      startListeners() {
+        const items = document.querySelectorAll('h2.valeur_titre');
 
-      for (let i = 0; i < items.length; i++) {
-        const item = items[i];
-        if (i === 0) {
-          this.texte = item.dataset.texte;
-          document.getElementById(item.dataset.image).classList.add('active');            
-        };
-        item.addEventListener('mouseover', () => {
-          document.querySelector('h2.active').classList.remove('active');
-          document.querySelector('img.active').classList.remove('active');
-          if (!item.classList.contains('active')) {
-            item.classList.add('active');
+        for (let i = 0; i < items.length; i++) {
+          const item = items[i];
+          if (i === 0) {
             this.texte = item.dataset.texte;
             document.getElementById(item.dataset.image).classList.add('active');            
-          }
-        });
-      }
-    },
-    methods: {
-      setTexte(texte) {
-        this.texte = texte;
+          };
+          item.addEventListener('mouseover', () => {
+            document.querySelector('h2.active').classList.remove('active');
+            document.querySelector('img.active').classList.remove('active');
+            if (!item.classList.contains('active')) {
+              item.classList.add('active');
+              this.texte = item.dataset.texte;
+              document.getElementById(item.dataset.image).classList.add('active');            
+            }
+          });
+        }
       }
     }
   }
