@@ -3,6 +3,9 @@ header {
   align-items: center;
   padding: 12px 20px;
   border-bottom: 1px solid $white;
+  position: sticky;
+  top: 0;
+  background: $black;
   nav {
     margin-left: auto;
     ul {
