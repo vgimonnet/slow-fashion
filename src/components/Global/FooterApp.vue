@@ -28,10 +28,13 @@
       <h3>
         Faire un don
       </h3>
-      <button class="marquee" id="marquee-footer">
+      <!-- <button class="marquee" id="marquee-footer">
         <marquee behavior="sliding" direction="left">
           Faire une donation - Faire une donation - Faire une donation
         </marquee>
+      </button> -->
+      <button class="marquee" id="marquee-footer">
+        Faire une donation
       </button>
       <br/>
       <img src="/logo-monde.svg" alt="Slow Fashion Movement" id="logo-monde">
@@ -64,12 +67,12 @@
 <script>
   export default {
     name: 'FooterApp',
-    mounted() {
-      const button = document.getElementById('marquee-footer');
-      const marquee = button.childNodes[0];
-      marquee.stop();
-      button.addEventListener('mouseover', () => marquee.start());
-      button.addEventListener('mouseout', () => marquee.stop());
-    }
+    // mounted() {
+      // const button = document.getElementById('marquee-footer');
+      // const marquee = button.childNodes[0];
+      // marquee.stop();
+      // button.addEventListener('mouseover', () => marquee.start());
+      // button.addEventListener('mouseout', () => marquee.stop());
+    // }
   }
 </script>
