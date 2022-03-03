@@ -11,7 +11,7 @@
       <p class="texte">
         Mais comment ? Vous pouvez contribuer à l’évolution du mouvement en faisant un don ou en nous soutenant sur les réseaux tel qu’Instagram.
       </p>
-      <button class="marquee">
+      <button class="marquee" id="marquee-donation">
         <marquee behavior="sliding" direction="left">
           Faire une donation - Faire une donation - Faire une donation
         </marquee>
@@ -22,7 +22,14 @@
 
 <script>
   export default {
-    name: 'DonationSection'
+    name: 'DonationSection',
+    mounted() {
+      const button = document.getElementById('marquee-donation');
+      const marquee = button.childNodes[0];
+      marquee.stop();
+      button.addEventListener('mouseover', () => marquee.start());
+      button.addEventListener('mouseout', () => marquee.stop());
+    }
   }
 </script>
 

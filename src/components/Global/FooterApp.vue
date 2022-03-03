@@ -28,7 +28,7 @@
       <h3>
         Faire un don
       </h3>
-      <button class="marquee">
+      <button class="marquee" id="marquee-footer">
         <marquee behavior="sliding" direction="left">
           Faire une donation - Faire une donation - Faire une donation
         </marquee>
@@ -63,6 +63,13 @@
 
 <script>
   export default {
-    name: 'FooterApp'
+    name: 'FooterApp',
+    mounted() {
+      const button = document.getElementById('marquee-footer');
+      const marquee = button.childNodes[0];
+      marquee.stop();
+      button.addEventListener('mouseover', () => marquee.start());
+      button.addEventListener('mouseout', () => marquee.stop());
+    }
   }
 </script>

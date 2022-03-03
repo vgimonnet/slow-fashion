@@ -9,7 +9,7 @@
       <p class="color-grey texte">
         Le Mouvement Slow Fashion est dirigé par des bénévoles. L’objectif premier est de répendre le mouvement en communicant sur les réseaux tel qu’Instagram. Vous avez un talent particulier dans le domaine du slow fashion ? Partagez le nous !
       </p>
-      <button class="marquee">
+      <button class="marquee" id="marquee-equipe">
         <marquee behavior="sliding" direction="left">
           Nous rejoindre - Nous rejoindre - Nous rejoindre
         </marquee>
@@ -26,7 +26,14 @@
 
 <script>
   export default {
-    name: 'EquipeSection'
+    name: 'EquipeSection',
+    mounted() {
+      const button = document.getElementById('marquee-equipe');
+      const marquee = button.childNodes[0];
+      marquee.stop();
+      button.addEventListener('mouseover', () => marquee.start());
+      button.addEventListener('mouseout', () => marquee.stop());   
+    }
   }
 </script>
 
