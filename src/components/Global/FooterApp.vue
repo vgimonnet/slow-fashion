@@ -28,11 +28,11 @@
       <h3>
         Faire un don
       </h3>
-      <div class="marquee">
-        <p>
+      <button class="marquee">
+        <marquee behavior="sliding" direction="left">
           Faire une donation - Faire une donation - Faire une donation
-        </p>
-      </div>
+        </marquee>
+      </button>
     </div>
     <div class="bloc">
       <h3>
@@ -58,3 +58,9 @@
     </div>
   </footer>
 </template>
+
+<script>
+  export default {
+    name: 'FooterApp'
+  }
+</script>

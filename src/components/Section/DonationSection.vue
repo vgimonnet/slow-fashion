@@ -11,11 +11,11 @@
       <p class="texte">
         Mais comment ? Vous pouvez contribuer à l’évolution du mouvement en faisant un don ou en nous soutenant sur les réseaux tel qu’Instagram.
       </p>
-      <div class="marquee">
-        <p>
+      <button class="marquee">
+        <marquee behavior="sliding" direction="left">
           Faire une donation - Faire une donation - Faire une donation
-        </p>
-      </div>
+        </marquee>
+      </button>
     </div>
   </section>
 </template>

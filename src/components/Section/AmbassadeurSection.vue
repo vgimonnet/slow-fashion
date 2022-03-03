@@ -15,11 +15,11 @@
       <p class="color-grey">
         Le Mouvement Slow Fashion est dirigé par des bénévoles. L’objectif premier est de répendre le mouvement en communicant sur les réseaux tel qu’Instagram. Vous avez un talent particulier dans le domaine du slow fashion ? Partagez le nous !
       </p>
-      <div class="marquee">
-        <p>
-          Devenir Ambassadeur - Devenir Ambassadeur - Devenir Ambassadeur - 
-        </p>
-      </div>
+      <button class="marquee">
+        <marquee behavior="sliding" direction="left">
+          Devenir Ambassadeur - Devenir Ambassadeur - Devenir Ambassadeur
+        </marquee>
+      </button>
     </div>
   </section>
 </template>

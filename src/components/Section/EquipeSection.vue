@@ -9,11 +9,11 @@
       <p class="color-grey texte">
         Le Mouvement Slow Fashion est dirigé par des bénévoles. L’objectif premier est de répendre le mouvement en communicant sur les réseaux tel qu’Instagram. Vous avez un talent particulier dans le domaine du slow fashion ? Partagez le nous !
       </p>
-      <div class="marquee">
-        <p>
+      <button class="marquee">
+        <marquee behavior="sliding" direction="left">
           Nous rejoindre - Nous rejoindre - Nous rejoindre
-        </p>
-      </div>
+        </marquee>
+      </button>
     </div>
     <div class="half">
       <img src="../../assets/images/woman2.svg" alt="Membre de l'équipe n°2">
