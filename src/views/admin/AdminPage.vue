@@ -1,8 +1,12 @@
 <template>
-  <main>
-    <h1>Administration</h1>
+  <main id="admin">
+    <h1>
+      <span>
+        Administration
+      </span>
+    </h1>
 
-    <nav>
+    <nav class="nav">
       <ul>
         <li>
           <router-link :to="{ name: 'BlogsAdmin' }">Blogs</router-link>
