@@ -19,7 +19,7 @@
           <router-link :to="{ name: 'Blogs' }">Blogs</router-link>          
         </li>
         <li>
-          <a href="#">Contact</a>
+          <router-link :to="{ name: 'Contact' }">Contact</router-link>          
         </li>
       </ul>
     </nav>
