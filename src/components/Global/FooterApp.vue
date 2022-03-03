@@ -33,6 +33,8 @@
           Faire une donation - Faire une donation - Faire une donation
         </marquee>
       </button>
+      <br/>
+      <img src="/logo-monde.svg" alt="Slow Fashion Movement" id="logo-monde">
     </div>
     <div class="bloc">
       <h3>
