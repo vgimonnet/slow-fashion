@@ -30,13 +30,13 @@
       </ul> -->
       <ul>
         <li>
-          <a href="#accueil" class="anchor" @click="scroll('#accueil')">À propos</a>
+          <a href="#accueil" class="anchor">À propos</a>
         </li>
         <li>
-          <a href="#ambassadeur" class="anchor" @click="scroll('#accueil')">Devenir ambassadeur/rice</a>
+          <a href="#ambassadeur" class="anchor">Devenir ambassadeur/rice</a>
         </li>
         <li>
-          <a href="#donation" class="anchor" @click="scroll('#accueil')">Donations</a>
+          <a href="#donation" class="anchor">Donations</a>
         </li>
         <li>
           <a href="#">Blogs</a>
@@ -51,11 +51,6 @@
 
 <script>
   export default {
-    name: 'HeaderApp',
-    methods: {
-      scroll(id) {
-        
-      }
-    }
+    name: 'HeaderApp'
   }
 </script>

@@ -7,6 +7,8 @@ section#accueil {
   flex-direction: row;
   height: calc(100vh - $header-height);
   column-gap: 20px;
+  margin-top: -$header-height;
+  padding-top: $header-height;
   img {
     max-width: $half;
     height: 100%;
