@@ -42,14 +42,23 @@
     methods: {
       slide() {
         const carousel = document.getElementById('carousel');
+        const images = carousel.childNodes;
+        
         let scrollCompleted = 0;
+        let scrollPosition = 0;
         // true for right and false for left direction
         let direction = true;
         let slideVar = setInterval(() => {
           if(direction){
-            carousel.scrollLeft += 2;
+            scrollPosition -= 2;
+            images.forEach(image => {
+              image.style.transform = `translateX(${ scrollPosition }px)`;
+            });
           } else {
-            carousel.scrollLeft -= 2;
+            scrollPosition += 2;
+            images.forEach(image => {
+              image.style.transform = `translateX(${ scrollPosition }px)`;
+            });
           }
           scrollCompleted += 10;
           if(scrollCompleted >= 5000){
