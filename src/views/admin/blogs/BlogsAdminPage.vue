@@ -1,7 +1,7 @@
 <template>
   <main id="admin" class="blogs-admin-page">
     <h1>
-      <span>Blogs</span>
+      <span>Blog</span>
     </h1>
     <router-link :to="{ name: 'BlogAjouter' }" class="marquee btn-add">Ajouter</router-link>
     <table>

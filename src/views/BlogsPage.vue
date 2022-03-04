@@ -2,7 +2,7 @@
   <main id="admin">
     <h1>
       <span>
-        Blogs
+        Blog
       </span>
     </h1>
     <ul id="blogs_list">

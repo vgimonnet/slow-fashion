@@ -16,10 +16,13 @@
             <a href="#donation" class="anchor">Donations</a>
           </li>
           <li>
-            <router-link :to="{ name: 'Blogs' }">Blogs</router-link>          
+            <router-link :to="{ name: 'Blogs' }">Blog</router-link>          
           </li>
           <li>
-            <router-link :to="{ name: 'Admin' }">Contact</router-link>          
+            <a href="#">Contact</a>          
+          </li>
+          <li>
+            <router-link :to="{ name: 'Admin' }">Administration</router-link>          
           </li>
         </ul>
       </nav>
