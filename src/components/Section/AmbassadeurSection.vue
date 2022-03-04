@@ -1,14 +1,12 @@
 <template>
   <section id="ambassadeur">
     <div id="carousel" direction="right">
-      <!-- <marquee behavior="scroll" > -->
-        <img src="../../assets/images/woman1.svg" alt="Ambassadrice 1">
-        <img src="../../assets/images/woman2.svg" alt="Ambassadrice 2">
-        <img src="../../assets/images/woman3.svg" alt="Ambassadrice 3">
-        <img src="../../assets/images/woman1.svg" alt="Ambassadrice 1">
-        <img src="../../assets/images/woman2.svg" alt="Ambassadrice 2">
-        <img src="../../assets/images/woman3.svg" alt="Ambassadrice 3">
-      <!-- </marquee> -->
+      <img src="../../assets/images/woman1.svg" alt="Ambassadrice 1">
+      <img src="../../assets/images/woman2.svg" alt="Ambassadrice 2">
+      <img src="../../assets/images/woman3.svg" alt="Ambassadrice 3">
+      <img src="../../assets/images/woman1.svg" alt="Ambassadrice 1">
+      <img src="../../assets/images/woman2.svg" alt="Ambassadrice 2">
+      <img src="../../assets/images/woman3.svg" alt="Ambassadrice 3">
     </div>
     <div id="ambassadeur-content">
       <h2>
@@ -32,13 +30,35 @@
 <script>
   export default {
     name: 'AmbassadeurSection',
-    // mounted() {
+    mounted() {
       // const button = document.getElementById('marquee-ambassadeur');
       // const marquee = button.childNodes[0];
       // marquee.stop();
       // button.addEventListener('mouseover', () => marquee.start());
       // button.addEventListener('mouseout', () => marquee.stop());
-    // }
+
+      this.slide();
+    },
+    methods: {
+      slide() {
+        const carousel = document.getElementById('carousel');
+        let scrollCompleted = 0;
+        // true for right and false for left direction
+        let direction = true;
+        let slideVar = setInterval(() => {
+          if(direction){
+            carousel.scrollLeft += 2;
+          } else {
+            carousel.scrollLeft -= 2;
+          }
+          scrollCompleted += 10;
+          if(scrollCompleted >= 5000){
+            scrollCompleted = 0;
+            direction = !direction;
+          }
+        }, 50);
+      }
+    }
   }
 </script>
 
