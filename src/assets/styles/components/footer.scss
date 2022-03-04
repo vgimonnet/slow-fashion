@@ -45,10 +45,17 @@ footer {
       width: fill-available;
       width: -webkit-fill-available;
       width: -moz-available;
+      margin-bottom: 20px;
     }
   }
 
   img#logo-monde {
     margin-top: 30px;
+  }
+
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }

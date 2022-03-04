@@ -40,7 +40,14 @@
         Faire une donation
       </button>
       <br/>
-      <img src="/logo-monde.svg" alt="Slow Fashion Movement" id="logo-monde">
+      <span class="flex-between">
+        <a href="https://www.slowfashion.global/">
+          <img src="/logo-monde.svg" alt="Slow Fashion Movement" id="logo-monde">
+        </a>
+        <a href="https://www.instagram.com/slowfashion.movement/">
+          <img src="/src/assets/images/instagram.svg" alt="Instagram Slow Fashion Movement">
+        </a>
+      </span>
     </div>
     <div class="bloc">
       <h3>
@@ -63,6 +70,9 @@
         <label for="email" class="d-none">Email</label>
         <input type="email" placeholder="Votre email" required>
       </form>
+      <a href="https://www.instagram.com/slowfashion.france/" id="link-insta">
+        <img src="/src/assets/images/instagram.svg" alt="Instagram">
+      </a>
     </div>
   </footer>
 </template>
