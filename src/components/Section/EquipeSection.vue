@@ -19,10 +19,14 @@
       </button>
     </div>
     <div class="half">
-      <img src="../../assets/images/woman2.svg" alt="Membre de l'équipe n°2">
-      <img src="../../assets/images/woman3.svg" alt="Membre de l'équipe n°3">
-      <img src="../../assets/images/woman2.svg" alt="Membre de l'équipe n°2">
-      <img src="../../assets/images/woman3.svg" alt="Membre de l'équipe n°3">
+      <div class="row">
+        <img src="../../assets/images/woman2.svg" alt="Membre de l'équipe n°2">
+        <img src="../../assets/images/woman3.svg" alt="Membre de l'équipe n°3">
+      </div>
+      <div class="row">
+        <img src="../../assets/images/woman2.svg" alt="Membre de l'équipe n°2">
+        <img src="../../assets/images/woman3.svg" alt="Membre de l'équipe n°3">
+      </div>
     </div>
   </section>
 </template>
