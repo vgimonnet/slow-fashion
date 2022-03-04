@@ -4,9 +4,9 @@
       <img src="../../assets/images/woman1.svg" alt="Ambassadrice 1">
       <img src="../../assets/images/woman2.svg" alt="Ambassadrice 2">
       <img src="../../assets/images/woman3.svg" alt="Ambassadrice 3">
-      <img src="../../assets/images/woman1.svg" alt="Ambassadrice 1">
-      <img src="../../assets/images/woman2.svg" alt="Ambassadrice 2">
-      <img src="../../assets/images/woman3.svg" alt="Ambassadrice 3">
+      <img src="../../assets/images/woman4.svg" alt="Ambassadrice 4">
+      <img src="../../assets/images/woman5.svg" alt="Ambassadrice 5">
+      <img src="../../assets/images/woman6.svg" alt="Ambassadrice 6">
     </div>
     <div id="ambassadeur-content">
       <h2>
