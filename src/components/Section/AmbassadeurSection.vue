@@ -56,7 +56,7 @@
             scrollCompleted = 0;
             direction = !direction;
           }
-        }, 50);
+        }, 35);
       }
     }
   }
